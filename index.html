@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentoria</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+    <header>
+      <div class="box-align-form">
+        <h1>MENTORIA</h1>
+        <p>Preencha o formulário abaixo para <br/>agendar a sua mentoria</p>
+      </div>
+    </header>
+    <main>
+      <form id="form-mentoria">
+        <div class="fieldset-wrapper">
+
+          <!--Informações Pessoais-->
+          <fieldset> 
+            <p>Informações Pessoais</p>
+            <div class="line-empty"></div>
+
+            <div class="col-2">
+              <div class="input-wrapper">
+                <label for="event-name">Nome</label>
+                <input type="text" id="event-name" required>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="inf-lastname">Sobrenome</label>
+                <input 
+                type="text" 
+                id="inf-lastname"
+                required>
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="inf-email">E-mail <span>(Digite um email válido)</span></label>
+              <input type="text" id="inf-email" required/>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="inf-password">Senha <span>(mínimo de 6 caracteres)</span></label>
+              <input 
+              type="password" 
+              id="inf-password"
+              required
+              minlength="6"/>
+            </div>
+          </fieldset>
+
+          <!--Informações do mentor-->
+          <fieldset class="fieldset-infmentor">
+            <p>Informações do mentor</p>
+            <div class="line-empty"></div>
+  
+            <div class="input-wrapper">
+              <label for="inf-name-master">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+              <input type="text" id="inf-name-master" required>
+            </div>
+          </fieldset>
+
+          <!--Seus Horários Disponíveis-->
+          <fieldset>
+            <p>Seus Horários Disponíveis</p>
+            <div class="line-empty"></div>
+            
+            <h2>Primeira Mentoria</h2>
+            <div class="col-3"><!--Primeira mentoria-->
+              
+              <div class="input-wrapper">
+                <label for="inf-date">Data <span>(DD/MM/AAAAA)</span></label>
+                <input type="date" id="inf-date" required>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="inf-time1">Das</label>
+                <input type="time" id="inf-time1" required>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="inf-time2">Até</label>
+                <input type="time" id="inf-time2" required>
+              </div>
+            </div>
+
+            <h2>Segunda Mentoria</h2>
+            <div class="col-3"><!--Segunda Mentoria-->
+              
+              <div class="input-wrapper">
+                <label for="inf-date">Data <span>(DD/MM/AAAAA)</span></label>
+                <input type="date" id="inf-date" required>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="inf-time1">Das</label>
+                <input type="time" id="inf-time1" required>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="inf-time2">Até</label>
+                <input type="time" id="inf-time2"required>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        
+      </form>
+    </main>
+    <footer> <!--CONFIGURANDO BOTÃO SUBMIT-->
+        <div class="input-wrapper">
+          <div class="box-submit">
+            <input 
+              type="submit" 
+              id="btnsubmit"
+              form="form-mentoria" 
+              value="Enviar">
+          </div>
+        </div>
+    </footer>
+  </body>
+</html>
